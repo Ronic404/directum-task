@@ -1,0 +1,65 @@
+{
+  "name": "New form",
+  "postmessage": "Congratulates!!!",
+  "form": {
+    "premessage": "Generation",
+    "items": [
+      {
+        "name": "one",
+        "type": "filler",
+        "styles": "sdf",
+        "mask": "sdf",
+        "validate": "sdf",
+        "value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, totam."
+      },
+      {
+        "name": "two",
+        "type": "text",
+        "styles": "sdf",
+        "mask": "sdf",
+        "validate": "sdf",
+        "value": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      },
+      {
+        "name": "three",
+        "type": "textarea",
+        "styles": "sdf",
+        "mask": "sdf",
+        "validate": "sdf",
+        "value": "Temporibus culpa, dolorem hic ex at autem quaerat ducimus quisquam?"
+      },
+      {
+        "name": "four",
+        "type": "checkbox",
+        "styles": "sdf",
+        "mask": "sdf",
+        "validate": "sdf",
+        "value": "Autem, repellendus perferendis. Eos quidem quae eveniet nemo, commodi,"
+      },
+      {
+        "name": "five",
+        "type": "button",
+        "styles": "sdf",
+        "mask": "sdf",
+        "validate": "sdf",
+        "value": "libero quam reiciendis totam, minima ratione rerum."
+      },
+      {
+        "name": "six",
+        "type": "select",
+        "styles": "sdf",
+        "mask": "sdf",
+        "validate": "sdf",
+        "value": "Perferendis eveniet cumque veniam accusantium quas iure quos omnis excepturi,"
+      },
+      {
+        "name": "seven",
+        "type": "radio",
+        "styles": "sdf",
+        "mask": "sdf",
+        "validate": "sdf",
+        "value": "officiis corporis tempora odio eligendi esse?"
+      }
+    ] 
+  }
+}
