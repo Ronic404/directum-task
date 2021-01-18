@@ -5,17 +5,19 @@
     "premessage": "Generation",
     "items": [
       {
-        "name": "one",
+        "name": "Filler👇",
         "type": "filler",
-        "styles": "sdf",
-        "mask": "sdf",
-        "validate": "sdf",
-        "value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, totam."
+        "styles": "color: orangered; font-size: 30px;",
+        "mask": null,
+        "validate": null,
+        "attributes": {
+          "message": "<p>Click <a href='https://www.directum.ru/products' target='_blank'>here</a> to see products!!!<p>"
+        }
       },
       {
-        "name": "two",
+        "name": "Text👇",
         "type": "text",
-        "styles": "sdf",
+        "styles": "color: blue; font-size: 20px;",
         "mask": "sdf",
         "validate": "sdf",
         "value": "Lorem ipsum dolor sit amet consectetur adipisicing elit."

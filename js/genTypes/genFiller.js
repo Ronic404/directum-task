@@ -1,3 +1,7 @@
-export default function genFiller({ styles, mask, validate, value }) {
-  return value;
+export default function genFiller({ styles, attributes }) {
+  return `
+    <div style="${styles}">
+      ${attributes.message}
+    </div>
+  `;
 }

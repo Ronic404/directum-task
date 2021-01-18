@@ -1,4 +1,4 @@
-import genItem from './genItem.js';
+import genType from './genType.js';
 
 export default function generate(data) {
   console.log(data);
@@ -13,9 +13,10 @@ export default function generate(data) {
   postmessage. textContent = data.postmessage;
 
   fields.innerHTML = data.form.items.map(item => (
-    `<label><h3>${item.name}</h3></label>
-    <br>
-    ${genItem(item)}
-    <br>`
+    `<div>
+      <h3>${item.name}</h3>
+      ${genType(item)}
+    </div>
+    <hr>`
   )).join('')
 }
