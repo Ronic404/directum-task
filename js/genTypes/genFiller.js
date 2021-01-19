@@ -1,7 +1,7 @@
-export default function genFiller({ styles, attributes }) {
+export default function genFiller({ styles, message }) {
   return `
     <div style="${styles}">
-      ${attributes.message}
+      ${message}
     </div>
   `;
 }

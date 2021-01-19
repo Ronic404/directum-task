@@ -1,8 +1,6 @@
 import genType from './genType.js';
 
 export default function generate(data) {
-  console.log(data);
-  
   const formTitle = document.querySelector('#form-title');
   const fields = document.querySelector('#fields');
   const premessage = document.querySelector('#premessage');

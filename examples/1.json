@@ -10,17 +10,22 @@
         "styles": "color: orangered; font-size: 30px;",
         "mask": null,
         "validate": null,
-        "attributes": {
-          "message": "<p>Click <a href='https://www.directum.ru/products' target='_blank'>here</a> to see products!!!<p>"
-        }
+        "message": "<p>Click <a href='https://www.directum.ru/products' target='_blank'>here</a> to see products!!!<p>"
       },
       {
         "name": "Text👇",
         "type": "text",
+        "placeholder": "placeholder",
+        "required": true,
         "styles": "color: blue; font-size: 20px;",
         "mask": "sdf",
-        "validate": "sdf",
-        "value": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        "value": "Some text",
+        "label": "Label:",
+        "classCSS": "class-21",
+        "disabled": false,
+        "validationRules": {
+          "type": "email"
+        }
       },
       {
         "name": "three",
