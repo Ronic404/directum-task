@@ -1,6 +1,6 @@
 import genFiller from './genTypes/genFiller.js';
 import GenText from './genTypes/GenText.js';
-import genTextarea from './genTypes/genTextarea.js';
+import GenTextarea from './genTypes/GenTextarea.js';
 import genCheckbox from './genTypes/genCheckbox.js';
 import genButton from './genTypes/genButton.js';
 import genSelect from './genTypes/genSelect.js';
@@ -13,7 +13,7 @@ export default function genItem(data) {
     case 'text':
       return new GenText(data).render();
     case 'textarea':
-      return genTextarea(data);
+      return new GenTextarea(data).render();
     case 'checkbox':
       return genCheckbox(data);
     case 'button':

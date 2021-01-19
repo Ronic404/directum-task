@@ -21,6 +21,10 @@ export default class GenText {
     return (this.dis) ? 'disabled' : '';
   }
 
+  get tag() {
+    return 'input';
+  }
+
   get type() {
     if (this.validationTypeArray.includes(this.validationRules.type)) {
       return this.validationRules.type;
@@ -35,7 +39,7 @@ export default class GenText {
   render() {
     return `
       <label for="${this.name}">${this.label}</label>
-      <input
+      <${this.tag}
         id="${this.name}"
         type="${this.type}"
         style="${this.styles}"
@@ -45,6 +49,7 @@ export default class GenText {
         ${this.required}
         ${this.disabled}
       />
+
     `;
   }
 }

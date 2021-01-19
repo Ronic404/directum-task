@@ -18,7 +18,7 @@
         "placeholder": "placeholder",
         "required": true,
         "styles": "color: blue; font-size: 20px;",
-        "mask": "sdf",
+        "mask": null,
         "value": "Some text",
         "label": "Label:",
         "classCSS": "class-21",
@@ -28,12 +28,19 @@
         }
       },
       {
-        "name": "three",
+        "name": "Textarea👇",
         "type": "textarea",
-        "styles": "sdf",
-        "mask": "sdf",
-        "validate": "sdf",
-        "value": "Temporibus culpa, dolorem hic ex at autem quaerat ducimus quisquam?"
+        "placeholder": "placeholder",
+        "required": true,
+        "styles": "color: green; font-size: 25px;",
+        "mask": null,
+        "value": "Some text for textarea",
+        "label": "Label:",
+        "classCSS": "class-31",
+        "disabled": false,
+        "validationRules": {
+          "type": "email"
+        }
       },
       {
         "name": "four",
