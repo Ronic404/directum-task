@@ -1,10 +1,10 @@
 import genFiller from './genTypes/genFiller.js';
 import GenText from './genTypes/GenText.js';
 import GenTextarea from './genTypes/GenTextarea.js';
-import genCheckbox from './genTypes/genCheckbox.js';
-import genButton from './genTypes/genButton.js';
-import genSelect from './genTypes/genSelect.js';
-import genRadio from './genTypes/genRadio.js';
+import GenCheckbox from './genTypes/GenCheckbox.js';
+import GenButton from './genTypes/GenButton.js';
+import GenSelect from './genTypes/GenSelect.js';
+import GenRadio from './genTypes/GenRadio.js';
 
 export default function genItem(data) {
   switch (data.type) {
@@ -15,13 +15,13 @@ export default function genItem(data) {
     case 'textarea':
       return new GenTextarea(data).render();
     case 'checkbox':
-      return genCheckbox(data);
+      return new GenCheckbox(data).render();
     case 'button':
-      return genButton(data);
+      return new GenButton(data).render();
     case 'select':
-      return genSelect(data);
+      return new GenSelect(data).render();
     case 'radio':
-      return genRadio(data);
+      return new GenRadio(data).render();
     default:
       return 'Something went wrong :('
   }

@@ -1,5 +1,5 @@
 {
-  "name": "New form",
+  "name": "The best form (◕‿◕)",
   "postmessage": "Congratulates!!!",
   "form": {
     "premessage": "Generation",
@@ -8,20 +8,33 @@
         "name": "Filler👇",
         "type": "filler",
         "styles": "color: orangered; font-size: 30px;",
-        "mask": null,
-        "validate": null,
         "message": "<p>Click <a href='https://www.directum.ru/products' target='_blank'>here</a> to see products!!!<p>"
       },
       {
         "name": "Text👇",
         "type": "text",
-        "placeholder": "placeholder",
+        "placeholder": "8-999-123-1234",
         "required": true,
         "styles": "color: blue; font-size: 20px;",
-        "mask": null,
-        "value": "Some text",
-        "label": "Label:",
+        "mask": "pattern='8-[0-9]{3}-[0-9]{3}-[0-9]{4}'",
+        "value": "",
+        "label": "Phone number:",
         "classCSS": "class-21",
+        "disabled": false,
+        "validationRules": {
+          "type": "tel"
+        }
+      },
+      {
+        "name": "Text👇",
+        "type": "text",
+        "placeholder": "Your email",
+        "required": false,
+        "styles": "color: blue; font-size: 20px;",
+        "mask": null,
+        "value": "",
+        "label": "Email:",
+        "classCSS": "class-22",
         "disabled": false,
         "validationRules": {
           "type": "email"
@@ -33,46 +46,94 @@
         "placeholder": "placeholder",
         "required": true,
         "styles": "color: green; font-size: 25px;",
-        "mask": null,
         "value": "Some text for textarea",
         "label": "Label:",
         "classCSS": "class-31",
+        "disabled": false
+      },
+      {
+        "name": "Checkbox👇",
+        "type": "checkbox",
+        "placeholder": "some email",
+        "required": false,
+        "styles": null,
+        "label": "Label:",
+        "classCSS": "class-41",
         "disabled": false,
+        "checked": true
+      },
+      {
+        "name": "Button👇",
+        "type": "button",
+        "styles": "padding: 15px; border: 4px dashed brown; outline: none; cursor: pointer;",
+        "text": "I'm the button",
+        "classCSS": "class-51"
+      },
+      {
+        "name": "Select👇",
+        "type": "select",
+        "placeholder": "some email",
+        "required": false,
+        "styles": "color: blue; font-size: 20px;",
+        "mask": null,
+        "value": "",
+        "label": "Choose:",
+        "classCSS": "class-22",
+        "disabled": false,
+        "options": [
+          {
+            "value": "apple",
+            "text": "apple",
+            "selected": false
+          },
+          {
+            "value": "banana",
+            "text": "banana",
+            "selected": true
+          },
+          {
+            "value": "potato",
+            "text": "potato",
+            "selected": false
+          }
+        ],
+        "text": "I'm the button",
+        "selected": true,
         "validationRules": {
-          "type": "email"
+          "type": "select"
         }
       },
       {
-        "name": "four",
-        "type": "checkbox",
-        "styles": "sdf",
-        "mask": "sdf",
-        "validate": "sdf",
-        "value": "Autem, repellendus perferendis. Eos quidem quae eveniet nemo, commodi,"
-      },
-      {
-        "name": "five",
-        "type": "button",
-        "styles": "sdf",
-        "mask": "sdf",
-        "validate": "sdf",
-        "value": "libero quam reiciendis totam, minima ratione rerum."
-      },
-      {
-        "name": "six",
-        "type": "select",
-        "styles": "sdf",
-        "mask": "sdf",
-        "validate": "sdf",
-        "value": "Perferendis eveniet cumque veniam accusantium quas iure quos omnis excepturi,"
-      },
-      {
-        "name": "seven",
+        "name": "Radio👇",
         "type": "radio",
-        "styles": "sdf",
-        "mask": "sdf",
-        "validate": "sdf",
-        "value": "officiis corporis tempora odio eligendi esse?"
+        "placeholder": "8-999-123-1234",
+        "required": true,
+        "styles": "color: blue; font-size: 20px;",
+        "mask": "pattern='8-[0-9]{3}-[0-9]{3}-[0-9]{4}'",
+        "value": "",
+        "label": "Cars:",
+        "classCSS": "class-21",
+        "disabled": false,
+        "items": [
+          {
+            "value": "audi",
+            "label": "audi",
+            "checked": false
+          },
+          {
+            "value": "bmw",
+            "label": "bmw",
+            "checked": true
+          },
+          {
+            "value": "mercedes",
+            "label": "mercedes",
+            "checked": false
+          }
+        ],
+        "validationRules": {
+          "type": "radio"
+        }
       }
     ] 
   }

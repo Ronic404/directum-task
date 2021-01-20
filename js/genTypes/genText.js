@@ -1,8 +1,9 @@
 export default class GenText {
   validationTypeArray = ['text', 'tel', 'email', 'select', 'radio', 'checkbox'];
 
-  constructor({ name, styles, placeholder = '', required, validationRules, value = '', label = '', classCSS, disabled }) {
+  constructor({ mask, name, type, styles, placeholder = '', required, validationRules, value, label, classCSS, disabled }) {
     this.name = name;
+    this.type = type;
     this.styles = styles;
     this.placeholder = placeholder;
     this.req = required;
@@ -11,6 +12,7 @@ export default class GenText {
     this.label = label;
     this.classCSS = classCSS;
     this.dis = disabled;
+    this.mask = mask;
   }
 
   get required() {
@@ -21,13 +23,13 @@ export default class GenText {
     return (this.dis) ? 'disabled' : '';
   }
 
-  get tag() {
-    return 'input';
+  get phoneMask() {
+    return (this.validationRules.type === 'tel') ? this.mask : '';
   }
 
-  get type() {
+  get inputType() {
     if (this.validationTypeArray.includes(this.validationRules.type)) {
-      return this.validationRules.type;
+      return `type="${this.validationRules.type}"`;
     } else {
       throw new Error(`
         ${this.validationRules.type} is wrong type in TEXT field!!!
@@ -39,17 +41,16 @@ export default class GenText {
   render() {
     return `
       <label for="${this.name}">${this.label}</label>
-      <${this.tag}
+      <input
         id="${this.name}"
-        type="${this.type}"
+        ${this.inputType}
         style="${this.styles}"
         placeholder="${this.placeholder}"
         value="${this.value}"
         class="${this.classCSS}"
         ${this.required}
         ${this.disabled}
-      />
-
-    `;
+        ${this.phoneMask}
+      />`;
   }
 }
