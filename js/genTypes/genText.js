@@ -51,6 +51,7 @@ export default class GenText {
         ${this.required}
         ${this.disabled}
         ${this.phoneMask}
+        onInput="if (this.placeholder === this.value) alert('Placeholder and value don\\'t have to be the same')"
       />`;
   }
 }

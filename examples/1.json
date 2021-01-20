@@ -54,10 +54,9 @@
       {
         "name": "Checkbox👇",
         "type": "checkbox",
-        "placeholder": "some email",
         "required": false,
         "styles": null,
-        "label": "Label:",
+        "label": "Push:",
         "classCSS": "class-41",
         "disabled": false,
         "checked": true
