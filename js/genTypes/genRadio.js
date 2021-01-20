@@ -1,16 +1,10 @@
 import GenText from './GenText.js';
 
 export default class GenRadio extends GenText {
-  constructor({ name, type, styles, placeholder = '', required, validationRules, value = '', label = '', classCSS, disabled, items }) {
-    super(validationRules);
-
+  constructor({ name, styles, label, classCSS, disabled, items }) {
+    super(name, styles, label, classCSS, disabled);
     this.name = name;
-    this.type = type;
     this.styles = styles;
-    this.placeholder = placeholder;
-    this.req = required;
-    this.validationRules = validationRules;
-    this.value = value;
     this.label = label;
     this.classCSS = classCSS;
     this.dis = disabled;

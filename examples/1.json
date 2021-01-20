@@ -72,13 +72,9 @@
       {
         "name": "Select👇",
         "type": "select",
-        "placeholder": "some email",
-        "required": false,
         "styles": "color: blue; font-size: 20px;",
-        "mask": null,
-        "value": "",
         "label": "Choose:",
-        "classCSS": "class-22",
+        "classCSS": "class-61",
         "disabled": false,
         "options": [
           {
@@ -96,23 +92,14 @@
             "text": "potato",
             "selected": false
           }
-        ],
-        "text": "I'm the button",
-        "selected": true,
-        "validationRules": {
-          "type": "select"
-        }
+        ]
       },
       {
         "name": "Radio👇",
         "type": "radio",
-        "placeholder": "8-999-123-1234",
-        "required": true,
         "styles": "color: blue; font-size: 20px;",
-        "mask": "pattern='8-[0-9]{3}-[0-9]{3}-[0-9]{4}'",
-        "value": "",
         "label": "Cars:",
-        "classCSS": "class-21",
+        "classCSS": "class-71",
         "disabled": false,
         "items": [
           {
@@ -130,10 +117,7 @@
             "label": "mercedes",
             "checked": false
           }
-        ],
-        "validationRules": {
-          "type": "radio"
-        }
+        ]
       }
     ] 
   }

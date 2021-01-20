@@ -1,16 +1,10 @@
 import GenText from './GenText.js';
 
 export default class GenSelect extends GenText {
-  constructor({ name, type, styles, placeholder = '', required, validationRules, value = '', label = '', classCSS, disabled, options }) {
-    super(validationRules);
-
+  constructor({ name, styles, label, classCSS, disabled, options }) {
+    super(name, styles, label, classCSS, disabled);
     this.name = name;
-    this.type = type;
     this.styles = styles;
-    this.placeholder = placeholder;
-    this.req = required;
-    this.validationRules = validationRules;
-    this.value = value;
     this.label = label;
     this.classCSS = classCSS;
     this.dis = disabled;
@@ -29,15 +23,9 @@ export default class GenSelect extends GenText {
       <label for="${this.name}">${this.label}</label>
       <select
         id="${this.name}"
-        type="${this.type}"
         style="${this.styles}"
-        placeholder="${this.placeholder}"
-        value="${this.value}"
         class="${this.classCSS}"
-        ${this.required}
         ${this.disabled}
-        ${this.phoneMask}
-        ${this.checked}
       >
         ${this.genOptions()}
       </select>`;
